@@ -27,7 +27,7 @@
                 text-decoration: none;
                 font-family: Poppins;
                 font-weight: 500;
-                font-size: 1.1vw;
+                font-size: 1.2em;
             }
         }
     }

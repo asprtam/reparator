@@ -17,7 +17,9 @@
     header {
         width: 100%;
         position: fixed;
-        z-index: 2;
+        top: 0vh;
+        margin-top: 0;
+        z-index: 10;
     }
     header .container {
        width: 100%;
