@@ -64,8 +64,8 @@
 
 <div class="menu">
     <ul class="menuList">
-        <li><Link to="/">Działalność</Link></li>
-        <li><Link to="/uslugi">Usługi</Link></li>
+        <li><a href="#dzialalnosc">Działalność</a></li>
+        <li><a href="#uslugi">Usługi</a></li>
         <li><Link to="/realizacje">Realizacje</Link></li>
         <li><Link to="/cennik">Cennik</Link></li>
         <li><a href="#kontakt">Kontakt</a></li>

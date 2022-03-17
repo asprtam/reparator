@@ -1,18 +1,25 @@
 class svgDraw {
     el;
     className;
-    constructor(el, className) {
+    delay;
+    constructor(el, className, delay) {
         this.el = el;
         this.className = className;
+        this.delay = delay;
     }
     pause() {
 
     }
     play() {
-        setTimeout(() => {
-            console.log(this.className);
-            this.el.classList.add(this.className);
-        }, 10)
+        if(this.delay) {
+            setTimeout(() => {
+                this.el.classList.add(this.className);
+            }, this.delay*1000)
+        } else {
+            setTimeout(() => {
+                this.el.classList.add(this.className);
+            }, 10)
+        }
     }
 }
 

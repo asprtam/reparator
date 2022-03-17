@@ -16,3 +16,154 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+
+
+.svg-after path {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after polygon {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after3 rect {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after3 circle {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after3 path {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after3 polygon {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after3 rect {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:rgba(255,255,255,0) !important;
+	stroke:rgba(255,255,255,0) !important;
+}
+.svg-after3 circle {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after2 path {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after2 polygon {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after2 rect {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after2 circle {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after2 g:last-child path {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+	transition: stroke-dashoffset 5s ease-in-out, fill 0.5s ease-in-out 0.5s !important;
+}
+.svg-after2 g:last-child polygon {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+	transition: stroke-dashoffset 5s ease-in-out, fill 0.5s ease-in-out 0.5s !important;
+}
+.svg-after2 g:last-child rect {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+	transition: stroke-dashoffset 5s ease-in-out, fill 0.5s ease-in-out 0.5s !important;
+}
+.svg-after2 g:last-child circle {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+	transition: stroke-dashoffset 5s ease-in-out, fill 0.5s ease-in-out 0.5s !important;
+}
+.svg-after-noFill path {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after-noFill polygon {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:#ffd400 !important;
+	stroke:#ffd400 !important;
+}
+.svg-after-noFill rect {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	stroke:#ffd400 !important;
+	fill:#ffd400 !important;
+}
+.svg-after-noFill circle {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	stroke:#ffd400 !important;
+	fill:#ffd400 !important;
+}
+.svg-after-noFill g g:first-child path {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	stroke:#ffd400 !important;
+	fill:rgba(255,255,255,0) !important;
+}
+.svg-after-noFill g g:first-child polygon {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	fill:rgba(255,255,255,0) !important;
+	stroke:#ffd400 !important;
+}
+.svg-after-noFill g g:first-child rect {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	stroke:#ffd400 !important;
+	fill:rgba(255,255,255,0) !important;
+}
+.svg-after-noFill g g:first-child circle {
+    stroke-dasharray: 1000 !important;
+    stroke-dashoffset: 0 !important;
+	stroke:#ffd400 !important;
+	fill:rgba(255,255,255,0) !important;
+}
