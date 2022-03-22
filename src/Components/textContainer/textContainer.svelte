@@ -20,23 +20,48 @@
         }
     }
     .textContainer {
-        width: 800px;
-        max-width: 40vw;
+        max-width: 50vw;
         margin-right: 1vw;
-        padding: 2vw 0;
+        padding: 3.5vw 0;
+        display: flex;
         @media (max-width: 767.98px) {
-            margin-right: 5vw;
+            margin-bottom: 5vw;
             width: 90vw;
-            padding: 2vw 0 0;
+            padding: 2vw 0 6vw;
             max-width: unset;
+            flex-direction: column;
         }
     }
     :global(.textContainer h4) {
         color: #1458bf;
-        font-size: 1.15em;
-        margin-bottom: 1.4em;
-        width: 100%;
+        font-size: 2.1em;
+        letter-spacing: 0.01em;
+        width: 80%;
+        font-family: Lato;
+        @media (max-width: 767.98px) {
+            width: unset;
+            margin-bottom: 6vw;
+        }
+    }
+    :global(.textContainer div) {
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    :global(.textContainer div p) {
+        text-align: right;
+        font-weight: 400 !important;
+    }
+    :global(.textContainer div h5) {
+        text-align: right;
+        font-size: 1.6em;
+        width: 70%;
+        color: #1458bf;
         font-family: Poppins;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
     }
     :global(.textContainer p) {
         color: #1458bf;
@@ -57,5 +82,4 @@
     <div class="textContainer">
         <slot />
     </div>
-    <img src="./media/pants.jpg"/>
 </section>

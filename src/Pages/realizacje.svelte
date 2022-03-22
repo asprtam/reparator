@@ -20,6 +20,6 @@
 
 	<Header></Header>
 	<SegmentedElement {...segmentedElementPkg}>
-		<Gallery itemNumber="{3}"></Gallery>
+		<Gallery itemNumber="{8}"></Gallery>
 	</SegmentedElement>
 	<Footer></Footer>

@@ -6,15 +6,15 @@
         font-family: Ubuntu;
         font-weight: 500;
         color: #0844a3;
-        font-size: 4vw;
+        font-size: 2.7vw;
         @media (max-width: 767.98px) {
             font-size: 8vw;
         }
     }
     h2 {
         font-family: Ubuntu;
-        font-weight: 500;
-        font-size: 1.2vw;
+        font-weight: 400;
+        font-size: 0.85vw;
         color: #0844a3;
     }
     header {
@@ -29,7 +29,7 @@
        background: #fff;
        display: flex;
        align-items: center;
-       height: 7vw;
+       height: 4.5vw;
        padding: 2vw 0 2vw;
        @media (max-width: 767.98px) {
             height: 10vw;
@@ -37,8 +37,8 @@
        }
     }
     header svg {
-        width: 7vw;
-        margin-left: 10vw;
+        width: 4.5vw;
+        margin-left: 20vw;
         margin-right: 1.3vw;
         @media (max-width: 767.98px) {
             width: 10vw;
@@ -55,7 +55,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        transform: translateY(-1vw);
+        transform: translateY(-0.5vw);
         height: 90%;
     }
     .logoTexts div {

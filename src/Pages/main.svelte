@@ -6,17 +6,18 @@
 	import TextContainer from "../Components/textContainer/textContainer.svelte";
 	import Footer from '../Components/footer/footer.svelte';
     import Page from '../Scripts/page.js';
+	import ButtonHeader from "../Components/ButtonHeader/buttonheader.svelte";
     import { onMount } from 'svelte';
     onMount(() => {
 		const page = new Page();
 		page.init();
 	});
 	const segmentedElementPkg = {
-		bg: './media/plumbing.jpg',
+		bg: './media/plumbing.webp',
 		type: ''
 	}
 	const segmentedElementPkg2 = {
-		bg: './media/parts.jpg',
+		bg: './media/parts.webp',
 		type: ''
 	}
 </script>
@@ -28,7 +29,8 @@
 		margin-left: 20%;
 		justify-content: space-evenly;
 		@media (max-width: 767.98px) {
-			flex-direction: column;
+			flex-direction: row;
+			flex-wrap: wrap;
 			margin: 0;
 			width: 100%;
 			align-items: center;
@@ -42,13 +44,13 @@
 			align-items: center;
 			width: 10vw;
 			@media (max-width: 767.98px) {
-				width: 80%;
-				margin: 3vw 0;
+				width: 40%;
+				margin: 3vw 3vw;
 			}
             svg {
                 height: 6vw;
 				@media (max-width: 767.98px) {
-					height: 40vw;
+					height: 20vw;
 				}
             }
 			p {
@@ -57,9 +59,11 @@
 				text-align: center;
 				font-family: Poppins;
 				font-size: 0.9em;
-				letter-spacing: 0.03em;
+				letter-spacing: 0.04em;
 				@media (max-width: 767.98px) {
 					margin-top:4vw;
+					transform: none !important;
+					opacity: 1 !important;
 				}
 			}
         }
@@ -74,10 +78,11 @@
 		}
 	}
 	h3 {
-		color: #fff;
-		font-size: 1.2em;
-		letter-spacing: 0.05em;
+		color: #ffd400;
+		font-size: 1.3em;
+		letter-spacing: 0.07em;
 		width: 100%;
+		font-weight: 400;
 		text-align: center;
 		font-family: Poppins;
 		margin-bottom: 2vw;
@@ -85,6 +90,7 @@
 			width: 90%;
 			font-size: 1.1em;
 			margin-left: 5%;
+			margin-bottom: 6vw;
 		}
 	}
 	.container div svg path {
@@ -293,17 +299,16 @@
 				<p data-animation="fadeDown" data-delay="{2}">Prace malarskie i dekoracyjne</p>
 			</div>
 		</div>
+		<ButtonHeader to={"#dzialalnosc"}>Sprawdź</ButtonHeader>
 	</SegmentedElement>
 	<TextContainer className="dzialalnosc">
-		<h4 data-animation="fadeDown" data-delay="{0}">Działalność</h4>
-		<p data-animation="fadeDown" data-delay="{0}">Zajmuję się remontami oraz aranżacją wnętrz mieszkalnych 
-			i użytkowych w rozsądnej cenie. Staram się zapewnić wykonanie
-			usługi na najwyższym poziomie z dbałością o szczegóły.</p>
-		<p data-animation="fadeDown" data-delay="{0}">Zakres prac obejmuje usługi hydrauliczne, usługi elektryczne, wykańczanie wnętrz,
-			a także konserwację i utrzymanie w należytym stanie instalacji i obiektów. </p>
-		<p data-animation="fadeDown" data-delay="{0}">W swojej pracy wsłuchuję się w potrzeby klientów po czym podejmuję 
-			niezbędne kroki, tak aby spełnić oczekiwanie i fachowo wykonując
-			powierzone zadanie. </p>
+		<h4 data-animation="fadeDown" data-delay="{0}">Zajmuję się remontami oraz aranżacją wnętrz mieszkalnych 
+			i użytkowych w rozsądnej cenie.</h4>
+		<div>
+			<p data-animation="fadeDown" data-delay="{0}">Zakres prac obejmuje usługi hydrauliczne, usługi elektryczne, wykańczanie wnętrz,
+				a także konserwację i utrzymanie w należytym stanie instalacji i obiektów. </p>
+			<h5 data-animation="fadeDown" data-delay="{0}">Wsłuchuję się w potrzeby klientów</h5>
+		</div>
 	</TextContainer>
 	<SegmentedElement {...segmentedElementPkg2}>
 		<div class="container thinner">
@@ -371,7 +376,8 @@
 		</div>
 	</SegmentedElement>
 	<ItemGallery type={"uslugi"}>
-		<ItemZoom src="./media/lazienki.jpg">
+		<ButtonHeader>Usługi</ButtonHeader>
+		<ItemZoom src="./media/lazienki.webp">
 			<div>
 				<p>WOD - KAN</p>
 				<svg id="adbc5d21-24b3-49b0-8959-d2ebf1a381ca" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.94 202.74">
@@ -442,7 +448,7 @@
 				</div>
 			</div>
 		</ItemZoom>
-		<ItemZoom src="./media/elektryczne.jpg">
+		<ItemZoom src="./media/elektryczne.webp">
 			<div>
 				<p>ELEKTRYKA</p>
 				<svg id="ea84cdcc-c748-4268-bf35-66a82ebd9f9b" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.94 202.74">
@@ -534,7 +540,7 @@
 				</div>
 			</div>
 		</ItemZoom>
-		<ItemZoom src="./media/wnetrza.jpg">
+		<ItemZoom src="./media/wnetrza.webp">
 			<div>
 				<p>WNĘTRZA</p>
 				<svg id="bb9d876f-71b8-4899-9af1-1296b3d6fa5f" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.94 202.74">
@@ -631,7 +637,7 @@
 				</div>
 			</div>
 		</ItemZoom>
-		<ItemZoom src="./media/inne.jpg">
+		<ItemZoom src="./media/inne.webp">
 			<div>
 				<p>INNE PRACE</p>
 				<svg id="b0dbeca8-313d-4536-a176-e3296bc349fa" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.94 202.74">

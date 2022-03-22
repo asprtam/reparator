@@ -1,5 +1,6 @@
 <script>
     export let type;
+    import ButtonHeader from "../ButtonHeader/buttonheader.svelte";
 </script>
 <style lang="scss">
 footer {
@@ -43,10 +44,17 @@ footer {
         font-size: 1.1em;
         letter-spacing: 0.03em;
     }
+    
+}
+:global(footer .buttonHeader) {
+    display: none;
+}
+:global(.blue .buttonHeader) {
+    display: unset !important;
 }
 .blue {
     background: #0052cc;
-    padding: 3vw 0;
+    padding: 8vw 0 3vw;
     @media (max-width: 767.98px) {
         padding: 9vw 0;
     }
@@ -63,6 +71,7 @@ footer {
 </style>
 
 <footer class="{type} kontakt">
+    <ButtonHeader>Kontakt</ButtonHeader>
     <svg id="e9b5cf3d-4985-4677-9035-30edad0d23c9" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.5 94.85">
         <g>
             <path d="M277.1,282.06a1.18,1.18,0,0,0,.83-.35l6-6a1.18,1.18,0,0,0,0-1.67,1.16,1.16,0,0,0-1.65,0l-6,6a1.17,1.17,0,0,0,0,1.66A1.14,1.14,0,0,0,277.1,282.06Z" transform="translate(-257.78 -236.14)"/>

@@ -15,10 +15,10 @@
             margin-top: 9vh;
         }
         img {
-            width: 1000px;
+            width: 900px;
             margin-top: 1vw;
             margin-bottom: 2vw;
-            max-width: 60vw;
+            max-width: 55vw;
             @media (max-width: 767.98px) {
                 width: 80vw;
                 margin-top: 3vw;
@@ -27,7 +27,7 @@
             }
         }
     }
-    .textContainer2 {
+    .textContainer3 {
         width: 1000px;
         max-width: 60vw;
         @media (max-width: 767.98px) {
@@ -35,7 +35,7 @@
             max-width: unset;
         }
     }
-    :global(.textContainer2 p) {
+    :global(.textContainer3 p) {
         font-family: Ubuntu;
         font-weight: 500;
         letter-spacing: 0.02em;
@@ -53,7 +53,6 @@
         width: 1000px;
         max-width: 60vw;
         justify-content: space-between;
-        margin-bottom: 0.5vw;
         @media (max-width: 767.98px) {
             width: 90vw;
             max-width: unset;
@@ -82,35 +81,14 @@
             }
         }
     }
-    :global(.dzialalnosc a) {
-        text-decoration: none;
-        font-family: Ubuntu;
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        font-size: 1.05em;
-        color: #fbd232;
-        white-space: nowrap;
-        transition: all 0.2s ease-in-out;
-    }
-    :global(.dzialalnosc a:hover) {
-        letter-spacing: 0.06em;
-    }
 </style>
 
 <script>
-    import { Link } from "svelte-navigator";
     export let className;
 </script>
 
 <section class="{className}">
-    <ul>
-        <li data-animation="fadeDown" data-delay="{0.0}"><Link to="/cennikUslug/sciany">Cennik ściany i sufity</Link></li>
-        <li data-animation="fadeDown" data-delay="{0.1}"><Link to="/cennikUslug/wodKan">Cennik wod - kan</Link></li>
-        <li data-animation="fadeDown" data-delay="{0.2}"><Link to="/cennikUslug/elektryka">Cennik elektryka</Link></li>
-        <li data-animation="fadeDown" data-delay="{0.3}"><Link to="/cennikUslug/inne">Cennik inne prace</Link></li>
-    </ul>
-    <img src="./media/wycena.webp"/>
-    <div class="textContainer2">
+    <div class="textContainer3">
         <slot />
     </div>
 </section>

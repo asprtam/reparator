@@ -6,6 +6,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    z-index: 5;
     @media (max-width: 767.98px) {
         width: 90%;
         padding: 8vw 5% 8vw 5%;
@@ -14,7 +15,7 @@ section {
 }
 .uslugi2 {
     background: #0052cc;
-    margin-top: 20vh;
+    margin-top: 17vh;
     @media (max-width: 767.98px) {
         margin-top: 9vh;
     }

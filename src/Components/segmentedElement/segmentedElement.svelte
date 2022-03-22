@@ -6,7 +6,7 @@
 
 <style lang="scss">
     :global(.segmentedElement:first-of-type) {
-        margin-top: 11vw;
+        margin-top: 8.5vw;
         @media (max-width: 767.98px) {
             margin-top: 15vw;
         }

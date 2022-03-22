@@ -7,7 +7,7 @@ class AnimatedElement {
     el;
     constructor(el) {
         this.el = el;
-        this.yPos = utils.naturalize(utils.getOffset(el).top - window.innerHeight*0.7);
+        this.yPos = utils.naturalize(utils.getOffset(el).top - window.innerHeight*0.6);
         this.animation = Animations[el.dataset.animation](this.el, 0.6, el.dataset.delay);
         // if(el.dataset.animation!="draw") {
             this.animation.pause();

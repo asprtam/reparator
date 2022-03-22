@@ -2,6 +2,7 @@
 	import { Router, Route, Link } from "svelte-navigator";
 	import Main from './Pages/main.svelte';
 	import Uslugi from './Pages/uslugi.svelte';
+	import CennikUslug from './Pages/cennikUslug.svelte';
 	import Cennik from './Pages/cennik.svelte';
 	import Realizacje from './Pages/realizacje.svelte';
 </script>
@@ -17,5 +18,8 @@
 </Route>
 <Route path="realizacje">
 	<Realizacje></Realizacje>
+</Route>
+<Route path="cennikUslug/*">
+	<CennikUslug></CennikUslug>
 </Route>
 </Router>

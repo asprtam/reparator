@@ -24,7 +24,7 @@ export function getOffset(element) {
 export function smoothScroll(tg, dur=1) {
   const target = document.querySelector(tg);
   const duration = dur*1000;
-  const targetPosition = getOffset(target).top - window.innerHeight*0.22;
+  const targetPosition = getOffset(target).top - window.innerHeight*0.17;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   let startTime = null;

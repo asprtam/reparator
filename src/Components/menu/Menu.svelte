@@ -1,7 +1,7 @@
 <style lang="scss">
     .menu {
         transform: translateY(-50%);
-        width: 65.5vw;
+        width: 67.5vw;
         overflow: hidden;
         @media (max-width: 767.98px) {
             width: 100vw;
@@ -24,7 +24,7 @@
         list-style-type: none;
         display: flex;
         background: #fbd232;
-        padding: 0.5vw 12vw;
+        padding: 0.5vw 6vw 0.5vw 20vw;
         width: 40vw;
         justify-content: space-between;
         @media (max-width: 767.98px) {
